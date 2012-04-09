@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "languager.gemspec",
     "lib/languager.rb",
     "lib/languager/string.rb",
     "lib/languager/subs.rb",
