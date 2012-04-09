@@ -41,6 +41,7 @@ pkg
 
 # For vim:
 #*.swp
+.idea
 
 # For redcar:
 #.redcar

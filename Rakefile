@@ -13,15 +13,15 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "languager"
   gem.homepage = "http://github.com/aishek/languager"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Translate string to given language by keyboard layout}
+  gem.description = %Q{Translate string to given language by keyboard layout. Useful to auto convert user input from wrong language to target languages in search queries}
   gem.email = "aishek@gmail.com"
   gem.authors = ["Alexandr Borisov"]
-  # dependencies defined in Gemfile
+  gem.platform    = Gem::Platform::RUBY
+  gem.required_ruby_version = '>= 1.9.2'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
