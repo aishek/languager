@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "languager"
+  s.name = %q{languager}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Alexandr Borisov"]
-  s.date = "2012-04-09"
-  s.description = "Translate string to given language by keyboard layout. Useful to auto convert user input from wrong language to target languages in search queries"
-  s.email = "aishek@gmail.com"
+  s.authors = [%q{Alexandr Borisov}]
+  s.date = %q{2012-04-09}
+  s.description = %q{Translate string to given language by keyboard layout. Useful to auto convert user input from wrong language to target languages in search queries}
+  s.email = %q{aishek@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -32,12 +32,12 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_languager.rb"
   ]
-  s.homepage = "http://github.com/aishek/languager"
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
+  s.homepage = %q{http://github.com/aishek/languager}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
-  s.rubygems_version = "1.8.15"
-  s.summary = "Translate string to given language by keyboard layout"
+  s.rubygems_version = %q{1.8.8}
+  s.summary = %q{Translate string to given language by keyboard layout}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
